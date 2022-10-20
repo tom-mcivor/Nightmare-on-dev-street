@@ -20,8 +20,8 @@ describe('GET /', () => {
       .get('/')
       .then((res) => {
         document.body.innerHTML = res.text
-        const nav = screen.getAllByRole('navigation')
-        expect(nav).toHaveTextContent('Home')
+        const homeNav = screen.getByRole('navigation')
+        expect(homeNav).toHaveTextContent('Home')
       })
   })
 })
