@@ -1,53 +1,54 @@
 {
-  "puppies": [
+  "horrorMovies": [
     {
       "id": 1,
-      "name": "Fido",
-      "owner": "Fred",
-      "image": "/images/puppy1.jpg",
-      "breed": "Labrador"
+      "movie": "Nightmere of Elm Street",
+      "director": "Wes Craven",
+      "year": "1984",
+      "image": "/images/1.jpg"
+      
     },
     {
       "id": 2,
-      "name": "Coco",
-      "owner": "Chloe",
-      "image": "/images/puppy2.jpg",
-      "breed": "Labrador"
+      "movie": "The Cure of Frankenstein",
+      "director": "Terence Fisher",
+      "year": "1957",
+      "image": "/images/2.jpeg"
     },
     {
       "id": 3,
-      "name": "Magnum",
-      "owner": "Michael",
-      "image": "/images/puppy3.jpg",
-      "breed": "Rottweiler"
+      "movie": "The Exorcist",
+      "director": "William Friedkin",
+      "year": "1973",
+      "image": "/images/3.jpg"
     },
     {
       "id": 4,
-      "name": "Sadie",
-      "owner": "Sam",
-      "image": "/images/puppy4.jpg",
-      "breed": "Labrador"
+      "movie": "The Shining",
+      "director": "Stanley Kubrick",
+      "year": "1980",
+      "image": "/images/4.jpg"
     },
     {
       "id": 5,
-      "name": "Murphy",
-      "owner": "Matthew",
-      "image": "/images/puppy5.jpg",
-      "breed": "Pug"
+      "movie": "Psycho",
+      "director": "Alfred Hitchcock",
+      "year": "1960",
+      "image": "/images/5.jpg"
     },
     {
       "id": 6,
-      "name": "Bella",
-      "owner": "Brianna",
-      "image": "/images/puppy6.jpg",
-      "breed": "Labrador"
+      "movie": "Night of the living dead",
+      "director": "George A. Romero",
+      "year": "1968",
+      "image": "/images/6.jpeg"
     },
     {
       "id": 7,
-      "name": "Rocky",
-      "owner": "Ricky",
-      "image": "/images/puppy7.jpg",
-      "breed": "Labrador"
+      "movie": "Carrie",
+      "director": "Brian De Palma",
+      "year": "1976",
+      "image": "/images/7.jpg"
     }
   ]
 }
