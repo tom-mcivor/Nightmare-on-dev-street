@@ -1,18 +1,18 @@
-<form class="form" action="/puppies/{{id}}/edit" method="post">
-  <img class="img-circle" src="{{image}}" alt="{{name}}">
+<form class="form" action="/movie/{{id}}/edit" method="post">
+  <img class="img-circle" src="{{image}}" alt="{{movie}}">
   <label for="name" class="form-item">
     Name:
-    <input type="text" name="name" value="{{name}}">
+    <input type="text" name="name" value="{{movie}}">
   </label>
   
   <label for="breed" class="form-item">
-    Breed:
-    <input type="text" name="breed" value="{{breed}}">
+    Director:
+    <input type="text" name="director" value="{{director}}">
   </label>
   
   <label for="owner" class="form-item">
-    Owner:
-    <input type="text" name="owner" value="{{owner}}">
+    Year:
+    <input type="text" name="year" value="{{year}}">
   </label>
   
   <input type="hidden" name="image" value="{{image}}">
