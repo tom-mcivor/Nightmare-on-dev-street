@@ -5,50 +5,60 @@
       "movie": "Nightmere of Elm Street",
       "director": "Wes Craven",
       "year": "1984",
-      "image": "/images/1.jpg"
-      
+      "image": "/images/1.jpg",
+      "comments": [
+        "Good",
+        "Meh",
+        "awesome"
+      ]
     },
     {
       "id": 2,
       "movie": "The Cure of Frankenstein",
       "director": "Terence Fisher",
       "year": "1957",
-      "image": "/images/2.jpeg"
+      "image": "/images/2.jpeg",
+      "comments": []
     },
     {
       "id": 3,
       "movie": "The Exorcist",
       "director": "William Friedkin",
       "year": "1973",
-      "image": "/images/3.jpg"
+      "image": "/images/3.jpg",
+      "comments": []
     },
     {
       "id": 4,
       "movie": "The Shining",
       "director": "Stanley Kubrick",
       "year": "1980",
-      "image": "/images/4.jpg"
+      "image": "/images/4.jpg",
+      "comments": []
     },
     {
       "id": 5,
       "movie": "Psycho",
       "director": "Alfred Hitchcock",
       "year": "1960",
-      "image": "/images/5.jpg"
+      "image": "/images/5.jpg",
+      "comments": []
     },
     {
       "id": 6,
       "movie": "Night of the living dead",
       "director": "George A. Romero",
       "year": "1968",
-      "image": "/images/6.jpeg"
+      "image": "/images/6.jpeg",
+      "comments": []
     },
     {
       "id": 7,
       "movie": "Carrie",
       "director": "Brian De Palma",
       "year": "1976",
-      "image": "/images/7.jpg"
+      "image": "/images/7.jpg",
+      "comments": []
     }
   ]
 }
