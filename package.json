@@ -23,7 +23,7 @@
     "extends": "eda"
   },
   "jest": {
-    "testEnvironment": "node",
+    "testEnvironment": "jsdom",
     "watchPathIgnorePatterns": [
       "data.json"
     ]
