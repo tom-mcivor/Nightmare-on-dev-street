@@ -26,10 +26,10 @@ describe('GET /', () => {
   })
 })
 
-describe('GET /movies', () => {
+describe('GET /movie', () => {
   test('Check picture is displayed', () => {
     return request(server)
-      .get('/movies/1')
+      .get('/movie/1')
       .then((res) => {
         document.body.innerHTML = res.text
         const img = screen.getByRole('img')
@@ -38,28 +38,28 @@ describe('GET /movies', () => {
   })
   test('Check movie title is displayed', () => {
     return request(server)
-      .get('/movies/2')
+      .get('/movie/2')
       .then((res) => {
         document.body.innerHTML = res.text
-        const movieName = screen.getByRole('heading')
+        const movieName = screen.getAllByRole('heading')
         expect(movieName[0]).toHaveAttribute('The Cure of Frankenstein')
       })
   })
   test('Check movie director is displayed', () => {
     return request(server)
-      .get('/movies/3')
+      .get('/movie/3')
       .then((res) => {
         document.body.innerHTML = res.text
-        const movieDirector = screen.getByRole('heading') //check this role
+        const movieDirector = screen.getAllByRole('heading') //check this role
         expect(movieDirector[1]).toHaveAttribute('William Friedkin')
       })
   })
   test('Check movie year is displayed', () => {
     return request(server)
-      .get('/movies/4')
+      .get('/movie/4')
       .then((res) => {
         document.body.innerHTML = res.text
-        const movieYear = screen.getByRole('heading') //check this role
+        const movieYear = screen.getAllByRole('heading') //check this role
         expect(movieYear[2]).toHaveAttribute('1980')
       })
   })
