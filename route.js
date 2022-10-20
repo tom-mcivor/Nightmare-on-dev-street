@@ -34,8 +34,6 @@ router.get('/:id/edit', (req, res) => {
 
   .then( a => {
 
-console.log(a);
-
      const id = req.params.id
     let artvariable = JSON.parse(a).horrorMovies.find(pic =>  pic.id === +id)
 
