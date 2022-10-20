@@ -7,3 +7,4 @@ const render = (response) => {
 }
 
 module.exports = { render }
+
