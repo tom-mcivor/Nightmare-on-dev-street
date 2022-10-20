@@ -42,10 +42,14 @@ router.post('/:id/edit', (req, res) => {
       const id = req.params.id
       const newComments = req.body.comments
       const movieData = JSON.parse(dataset)
+      console.log(req.body)
       let movieObject = movieData.horrorMovies.find((pic) => pic.id == id)
 
       const index = movieData.horrorMovies.indexOf(movieObject)
-      movieObject.comments.push(newComments)
+
+      if (newComments != '') {
+        movieObject.comments.push(newComments)
+      }
 
       movieData.horrorMovies.splice(index, 1, movieObject)
 
