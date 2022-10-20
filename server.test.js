@@ -64,4 +64,33 @@ describe('GET /movie', () => {
         expect(movieYear[3]).toHaveTextContent('1980')
       })
   })
+  test('Check link to rating page', () => {
+    return request(server)
+      .get('/movie/5')
+      .then((res) => {
+        document.body.innerHTML = res.text
+        const ratePage = screen.getAllByRole('link')
+        expect(ratePage[1]).toHaveTextContent('Rate')
+      })
+  })
+  test('Check comments are displayed', () => {
+    return request(server)
+      .get('/movie/6')
+      .then((res) => {
+        document.body.innerHTML = res.text
+        const commentsTitle = screen.getAllByRole('heading')
+        expect(commentsTitle[4]).toHaveTextContent('Comments:')
+      })
+  })
+  test('Check comments for the movie are displayed', () => {
+    return request(server)
+      .get('/movie/7')
+      .then((res) => {
+        document.body.innerHTML = res.text
+        const commentsList = screen.getAllByRole('listitem')
+        expect(commentsList[0]).toHaveTextContent(
+          "It opens with an insidiously brilliant update of Psycho's shower scene and ends with a jump scare that Hitchcock would have envied; in between, it's merely the tenderest and most affecting movie ever made out of one of King's novels."
+        )
+      })
+  })
 })
