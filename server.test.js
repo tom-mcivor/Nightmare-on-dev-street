@@ -20,8 +20,8 @@ describe('GET /', () => {
       .get('/')
       .then((res) => {
         document.body.innerHTML = res.text
-        const nav = screen.getAllByRole('navigation')
-        expect(nav).toHaveTextContent('Home')
+        const homeNav = screen.getByRole('navigation')
+        expect(homeNav).toHaveTextContent('Home')
       })
   })
 })
@@ -42,7 +42,7 @@ describe('GET /movie', () => {
       .then((res) => {
         document.body.innerHTML = res.text
         const movieName = screen.getAllByRole('heading')
-        expect(movieName[0]).toHaveAttribute('The Cure of Frankenstein')
+        expect(movieName[1]).toHaveTextContent('The Curse of Frankenstein')
       })
   })
   test('Check movie director is displayed', () => {
@@ -50,8 +50,9 @@ describe('GET /movie', () => {
       .get('/movie/3')
       .then((res) => {
         document.body.innerHTML = res.text
-        const movieDirector = screen.getAllByRole('heading') //check this role
-        expect(movieDirector[1]).toHaveAttribute('William Friedkin')
+        const movieDirector = screen.getAllByRole('heading')
+        expect(movieDirector[2]).toHaveTextContent('William Friedkin')
+        console.log('heading')
       })
   })
   test('Check movie year is displayed', () => {
@@ -59,8 +60,37 @@ describe('GET /movie', () => {
       .get('/movie/4')
       .then((res) => {
         document.body.innerHTML = res.text
-        const movieYear = screen.getAllByRole('heading') //check this role
-        expect(movieYear[2]).toHaveAttribute('1980')
+        const movieYear = screen.getAllByRole('heading')
+        expect(movieYear[3]).toHaveTextContent('1980')
+      })
+  })
+  test('Check link to rating page', () => {
+    return request(server)
+      .get('/movie/5')
+      .then((res) => {
+        document.body.innerHTML = res.text
+        const ratePage = screen.getAllByRole('link')
+        expect(ratePage[1]).toHaveTextContent('Rate')
+      })
+  })
+  test('Check comments are displayed', () => {
+    return request(server)
+      .get('/movie/6')
+      .then((res) => {
+        document.body.innerHTML = res.text
+        const commentsTitle = screen.getAllByRole('heading')
+        expect(commentsTitle[4]).toHaveTextContent('Comments:')
+      })
+  })
+  test('Check comments for the movie are displayed', () => {
+    return request(server)
+      .get('/movie/7')
+      .then((res) => {
+        document.body.innerHTML = res.text
+        const commentsList = screen.getAllByRole('listitem')
+        expect(commentsList[0]).toHaveTextContent(
+          "It opens with an insidiously brilliant update of Psycho's shower scene and ends with a jump scare that Hitchcock would have envied; in between, it's merely the tenderest and most affecting movie ever made out of one of King's novels."
+        )
       })
   })
 })
