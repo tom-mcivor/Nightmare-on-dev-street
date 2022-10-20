@@ -42,7 +42,7 @@ describe('GET /movie', () => {
       .then((res) => {
         document.body.innerHTML = res.text
         const movieName = screen.getAllByRole('heading')
-        expect(movieName[0]).toHaveAttribute('The Cure of Frankenstein')
+        expect(movieName[1]).toHaveTextContent('The Curse of Frankenstein')
       })
   })
   test('Check movie director is displayed', () => {
@@ -50,8 +50,9 @@ describe('GET /movie', () => {
       .get('/movie/3')
       .then((res) => {
         document.body.innerHTML = res.text
-        const movieDirector = screen.getAllByRole('heading') //check this role
-        expect(movieDirector[1]).toHaveAttribute('William Friedkin')
+        const movieDirector = screen.getAllByRole('heading')
+        expect(movieDirector[2]).toHaveTextContent('William Friedkin')
+        console.log('heading')
       })
   })
   test('Check movie year is displayed', () => {
@@ -59,8 +60,8 @@ describe('GET /movie', () => {
       .get('/movie/4')
       .then((res) => {
         document.body.innerHTML = res.text
-        const movieYear = screen.getAllByRole('heading') //check this role
-        expect(movieYear[2]).toHaveAttribute('1980')
+        const movieYear = screen.getAllByRole('heading')
+        expect(movieYear[3]).toHaveTextContent('1980')
       })
   })
 })
