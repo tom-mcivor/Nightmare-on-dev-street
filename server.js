@@ -5,7 +5,7 @@ const hbs = require('express-handlebars')
 // const hbs = require('express-handlebars')
 
 
-const puppiesRoutes = require('./route')
+const movieRoutes = require('./route')
 
 const fsPromises = require('node:fs/promises')
 
@@ -32,7 +32,7 @@ server.get('/', (req, res) => {
 
 })
 
-server.use('/puppies', puppiesRoutes)
+server.use('/movie', movieRoutes)
 
 
 
