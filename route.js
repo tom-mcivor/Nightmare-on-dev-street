@@ -17,7 +17,7 @@ router.get('/:id', (req, res) => {
   .then( a => {
 
      const id = req.params.id
-    let artvariable = JSON.parse(a).puppies.find(pic =>  pic.id === +id)
+    let artvariable = JSON.parse(a).movies.find(pic =>  pic.id === +id)
 
     res.render('details', artvariable)
   
@@ -37,7 +37,7 @@ router.get('/:id/edit', (req, res) => {
 console.log(a);
 
      const id = req.params.id
-    let artvariable = JSON.parse(a).puppies.find(pic =>  pic.id === +id)
+    let artvariable = JSON.parse(a).movies.find(pic =>  pic.id === +id)
 
     res.render('edit', artvariable)
   
@@ -55,7 +55,7 @@ router.post('/:id/edit', (req, res) => {
 
      const id = req.params.id
      
-    let artvariable = JSON.parse(a).puppies.find(pic =>  pic.id === +id)
+    let artvariable = JSON.parse(a).movies.find(pic =>  pic.id === +id)
 
     res.render('details', artvariable)
   
