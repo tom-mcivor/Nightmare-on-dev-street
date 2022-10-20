@@ -1,21 +1,36 @@
 <form class="form" action="/movie/{{id}}/edit" method="post">
   <img class="img-circle" src="{{image}}" alt="{{movie}}">
-  <label for="name" class="form-item">
-    Name:
-    <input type="text" name="name" value="{{movie}}">
+      <fieldset>
+            <legend>Rate: {{movie}}</legend>
+            <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="Good">Good</label>
+            </p>
+             <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="some good parts">Some good parts</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="pizza" value="pizza" />
+              <label for="Average">Average</label>
+            </p>
+             <p>
+              <input type="radio" name="food" id="tacos" value="tacos" />
+              <label for="mostly bad">Mostly Bad"</label>
+            </p>
+            <p>
+              <input type="radio" name="food" id="other" value="other" />
+              <label for="bad">Bad</label>
+            </p> 
+            <label for="name" class="form-item">
+    comment:
+    <input type="text" name="name" placeholder="director: {{director}}">
   </label>
+          </fieldset>
+ 
   
-  <label for="breed" class="form-item">
-    Director:
-    <input type="text" name="director" value="{{director}}">
-  </label>
-  
-  <label for="owner" class="form-item">
-    Year:
-    <input type="text" name="year" value="{{year}}">
-  </label>
-  
-  <input type="hidden" name="image" value="{{image}}">
+
   
   <input type="submit" name="" value="Submit">
+
 </form>
