@@ -72,4 +72,13 @@ router.post('/:id/edit', (req, res) => {
     .catch()
 })
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max)
+}
+
+router.get('/random', (req, res) => {
+  let page = getRandomInt(7)
+  res.redirect('/movie/' + page)
+})
+
 module.exports = router
