@@ -64,11 +64,18 @@ body {
 .comments {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 50px;
   background-color:bisque;
   border-radius: 10px;
   border-width: 2px;
+  text-align: center;
+}
+
+ul{
+  text-align: left;
+  justify-content: left;
+  align-content: left;
+  align-items: left;
 }
 
 .img-circle {
@@ -86,14 +93,13 @@ body {
 }
 
 .nav {
-
-  text-align: center;
+  display: flex;
+  justify-content: center;
   color: brown;
   font-size: 3rem;
   border-bottom-style: solid;
   border-color: black;
   box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, 0.685);
-  
 }
 
 .nav:hover{
