@@ -13,7 +13,7 @@
       "movie": "The Cure of Frankenstein",
       "director": "Terence Fisher",
       "year": "1957",
-      "image": "/images/2.jpg"
+      "image": "/images/2.jpeg"
     },
     {
       "id": 3,
@@ -41,7 +41,7 @@
       "movie": "Night of the living dead",
       "director": "George A. Romero",
       "year": "1968",
-      "image": "/images/6.jpg"
+      "image": "/images/6.jpeg"
     },
     {
       "id": 7,
