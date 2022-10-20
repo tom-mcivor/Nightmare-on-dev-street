@@ -1,4 +1,4 @@
 # Nightmare on dev street
 
 
-public/images/1.jpg
+![Screenshot of a very simple page with the stylized title "nightmare on dev street" and a link reading "Home" above a circular image of a movie.](screenshot.png)
