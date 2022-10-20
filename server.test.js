@@ -94,3 +94,15 @@ describe('GET /movie', () => {
       })
   })
 })
+
+describe('GET /movie/:id/edit', () => {
+  test('Check picture is displayed', () => {
+    return request(server)
+      .get('/movie/1')
+      .then((res) => {
+        document.body.innerHTML = res.text
+        const img = screen.getByRole('img')
+        expect(img).toHaveAttribute('src')
+      })
+  })
+})
