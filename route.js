@@ -44,7 +44,6 @@ router.get('/:id/edit', (req, res) => {
 })
 
 
-
 router.post('/:id/edit', (req, res) => {
 
   fsPromises.readFile('./data.json','utf-8')
@@ -60,7 +59,6 @@ router.post('/:id/edit', (req, res) => {
   })
   .catch()
 })
-
 
 
 module.exports = router
