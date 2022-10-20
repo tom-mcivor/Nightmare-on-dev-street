@@ -14,9 +14,9 @@ router.get('/:id', (req, res) => {
 
     .then((a) => {
       const id = req.params.id
-      let artvariable = JSON.parse(a).horrorMovies.find((pic) => pic.id === +id)
+      let movieObject = JSON.parse(a).horrorMovies.find((pic) => pic.id === +id)
 
-      res.render('details', artvariable)
+      res.render('details', movieObject)
     })
     .catch()
 })
@@ -27,9 +27,9 @@ router.get('/:id/edit', (req, res) => {
 
     .then((a) => {
       const id = req.params.id
-      let artvariable = JSON.parse(a).horrorMovies.find((pic) => pic.id === +id)
+      let movieObject = JSON.parse(a).horrorMovies.find((pic) => pic.id === +id)
 
-      res.render('edit', artvariable)
+      res.render('edit', movieObject)
     })
     .catch()
 })
@@ -42,10 +42,18 @@ router.post('/:id/edit', (req, res) => {
       const id = req.params.id
       const newComments = req.body.comments
       const movieData = JSON.parse(dataset)
+      const newRating = req.body.rating
       console.log(req.body)
       let movieObject = movieData.horrorMovies.find((pic) => pic.id == id)
 
       const index = movieData.horrorMovies.indexOf(movieObject)
+      const ratingsArray = movieObject.rating.ratings
+
+      if (newRating != null) {
+        ratingsArray.push(+newRating)
+        movieObject.rating.averageRating =
+          ratingsArray.reduce((a, b) => a + b, 0) / ratingsArray.length
+      }
 
       if (newComments != '') {
         movieObject.comments.push(newComments)
