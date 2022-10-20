@@ -1,8 +1,10 @@
 <div class="container">
   {{#each horrorMovies}}
   <div class="movie-list">
-    <a href="/movie/{{id}}" style="text-decoration:none"><img class="img-circle" src="{{image}}" alt="{{movie}}"><h2>{{movie}}</h2></a>
-    
+    <a href="/movie/{{id}}" style="text-decoration:none"><img class="img-circle" src="{{image}}" alt="{{movie}}">
+      <h2>{{movie}}</h2>
+      <h2>{{rating.averageRating}}/5&#11088;</h2>
+    </a>
   </div>
   {{/each}}
 </div>

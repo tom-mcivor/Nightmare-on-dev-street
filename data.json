@@ -3,6 +3,14 @@
     {
       "id": 1,
       "movie": "Nightmere on Elm Street",
+      "rating": {
+        "ratings": [
+          5,
+          5,
+          5
+        ],
+        "averageRating": 5
+      },
       "director": "Wes Craven",
       "year": "1984",
       "image": "/images/1.jpg",
@@ -10,56 +18,127 @@
         "Really good movie, I enjoyed every minute of it.",
         "What can I say really about Nightmare on Elm Street. It has been said that it is a horror classic, Freddy Kreuger is iconic and it is an all round great film.",
         "What's so great about A Nightmare on Elm Street is how well it works as both a slasher flick and a psychological horror film. It's definitely one of the best slasher movies of all time.",
-        "This movie is the most creepiest and scariest movie that I have ever seen!"
+        "This movie is the most creepiest and scariest movie that I have ever seen!",
+        "sucks"
       ]
     },
     {
       "id": 2,
       "movie": "The Curse of Frankenstein",
+      "rating": {
+        "ratings": [
+          5,
+          5,
+          5
+        ],
+        "averageRating": 5
+      },
       "director": "Terence Fisher",
       "year": "1957",
       "image": "/images/2.jpeg",
-      "comments": ["For the new film generation, some minor chills are offered in this well-done production.", "A movie with a distinctive mood and style that finds its own niche. Loved it!"]
+      "comments": [
+        "For the new film generation, some minor chills are offered in this well-done production.",
+        "A movie with a distinctive mood and style that finds its own niche. Loved it!"
+      ]
     },
     {
       "id": 3,
       "movie": "The Exorcist",
+      "rating": {
+        "ratings": [
+          5,
+          5,
+          5
+        ],
+        "averageRating": 5
+      },
       "director": "William Friedkin",
       "year": "1973",
       "image": "/images/3.jpg",
-      "comments": ["The Exorcist may not be a great film. It is, however, a brilliantly successful horror movie.", "As much as it has been parodied and referenced and imitated millions of times, it is still one of the best horror movies ever made.", "The scariest movie that I have ever seen, I'm still having nightmares a week after watching"]
+      "comments": [
+        "The Exorcist may not be a great film. It is, however, a brilliantly successful horror movie.",
+        "As much as it has been parodied and referenced and imitated millions of times, it is still one of the best horror movies ever made.",
+        "The scariest movie that I have ever seen, I'm still having nightmares a week after watching"
+      ]
     },
     {
       "id": 4,
       "movie": "The Shining",
+      "rating": {
+        "ratings": [
+          5,
+          5,
+          5
+        ],
+        "averageRating": 5
+      },
       "director": "Stanley Kubrick",
       "year": "1980",
       "image": "/images/4.jpg",
-      "comments": ["Iconic image that everyone recognises.", "The classic Stanley Kubrick film isn't just scary - it is also, in its own odd way, defined by a hopeful perspective on life and death.", "A true masterpiece."]
+      "comments": [
+        "Iconic image that everyone recognises.",
+        "The classic Stanley Kubrick film isn't just scary - it is also, in its own odd way, defined by a hopeful perspective on life and death.",
+        "A true masterpiece."
+      ]
     },
     {
       "id": 5,
       "movie": "Psycho",
+      "rating": {
+        "ratings": [
+          5,
+          5,
+          5
+        ],
+        "averageRating": 5
+      },
       "director": "Alfred Hitchcock",
       "year": "1960",
       "image": "/images/5.jpg",
-      "comments": ["Psycho continues to be thrilling to this day.", "Hitchcock forged career-best performances out of Anthony Perkins and Janet Leigh.", "Any excuse to watch Hitchcock's film is all right with me. I hope I never find myself in a motel as creepy as the Bates' but I do enjoy returning there on my television." ]
+      "comments": [
+        "Psycho continues to be thrilling to this day.",
+        "Hitchcock forged career-best performances out of Anthony Perkins and Janet Leigh.",
+        "Any excuse to watch Hitchcock's film is all right with me. I hope I never find myself in a motel as creepy as the Bates' but I do enjoy returning there on my television."
+      ]
     },
     {
       "id": 6,
       "movie": "Night of the Living Dead",
+      "rating": {
+        "ratings": [
+          5,
+          5,
+          5
+        ],
+        "averageRating": 5
+      },
       "director": "George A. Romero",
       "year": "1968",
       "image": "/images/6.jpeg",
-      "comments": ["A must-see for film fans.", "The title immediately cues a tale of horror; but does not prepare one for the shocking treatment of the dead... The theme could not be in poorer taste.", "A landmark of American cinema. Intentional or not, the film's sociopolitical content remains as potent as ever."]
+      "comments": [
+        "A must-see for film fans.",
+        "The title immediately cues a tale of horror; but does not prepare one for the shocking treatment of the dead... The theme could not be in poorer taste.",
+        "A landmark of American cinema. Intentional or not, the film's sociopolitical content remains as potent as ever."
+      ]
     },
     {
       "id": 7,
       "movie": "Carrie",
+      "rating": {
+        "ratings": [
+          5,
+          5,
+          5
+        ],
+        "averageRating": 5
+      },
       "director": "Brian De Palma",
       "year": "1976",
       "image": "/images/7.jpg",
-      "comments": ["It opens with an insidiously brilliant update of Psycho's shower scene and ends with a jump scare that Hitchcock would have envied; in between, it's merely the tenderest and most affecting movie ever made out of one of King's novels.", "A voluptuously shot horror movie."]
+      "comments": [
+        "It opens with an insidiously brilliant update of Psycho's shower scene and ends with a jump scare that Hitchcock would have envied; in between, it's merely the tenderest and most affecting movie ever made out of one of King's novels.",
+        "A voluptuously shot horror movie."
+      ]
     }
   ]
 }
