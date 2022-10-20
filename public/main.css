@@ -40,6 +40,7 @@ body {
   margin: 50px;
   text-align: center;
   border-style: solid;
+  border-radius: 5px;
   border-color: rgba(0, 0, 0, 0.089);
   background-color: rgba(0, 0, 0, 0.096);
 }
@@ -49,7 +50,7 @@ body {
   border-color: red;
   background-color: rgb(170, 0, 0);
   font-family: 'Roboto', sans-serif;
-  border-radius: 2%;
+  border-radius: 5px;
   border-width: 2px;
 }
 
@@ -60,8 +61,18 @@ body {
   margin: 50px;
 }
 
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  background-color:bisque;
+  border-radius: 10px;
+  border-width: 2px;
+}
+
 .img-circle {
-  /* border-radius: 50%; */
+  border-radius: 5px;
   object-fit: cover;
   width: 230px;
   height: 230px;
