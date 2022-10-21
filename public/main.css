@@ -72,10 +72,11 @@ body {
   display: flex;
   flex-direction: column;
   margin: 50px;
-  background-color:bisque;
+  background-color:rgba(135, 18, 14, 0.614);
   border-radius: 10px;
   border-width: 2px;
   text-align: center;
+  color:white;
 }
 
 ul{
@@ -97,6 +98,8 @@ ul{
   text-align: center;
   font-size: 4rem;
   font-family: "Nosifer";
+  color: red;
+  text-shadow: 2px 2px black;
 
 }
 
