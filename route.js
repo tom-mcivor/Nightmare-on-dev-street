@@ -76,8 +76,8 @@ function getRandomInt(max) {
   return Math.floor(Math.random() * max)
 }
 
-router.get('/random', (req, res) => {
-  let page = getRandomInt(7)
+router.post('/random', (req, res) => {
+  let page = getRandomInt(7) + 1
   res.redirect('/movie/' + page)
 })
 
